@@ -1578,6 +1578,28 @@ function lib:Window(text, preset, closebind)
             local BindCorner = Instance.new("UICorner")
             local BindTitle = Instance.new("TextLabel")
             local BindText = Instance.new("TextLabel")
+            
+            local op = Instance.new("TextButton")
+            op.Size = UDim2.new(0.07, 0, 0.05, 0)
+            op.Position = UDim2.new(0.91, 0, 0, 0)
+            op.BackgroundColor3 = Color3.new(0, 0, 0)
+            op.BorderColor3 = Color3.new(0, 0, 1)
+            op.BorderSizePixel = 0
+            op.Text = "Vape"
+            op.BackgroundTransparency = 1
+            op.TextColor3 = Color3.new(0, 1, 0)
+            op.Font = Enum.Font.Legacy
+            op.Parent = ui
+            op.TextSize = 20
+            op.TextSize = 13
+            op.Draggable = true
+            op.MouseButton1Click:Connect(function()
+	if Main.Visible == false then
+		Main.Visible = true
+	else
+		Main.Visible = false
+	end
+end)
 
             Bind.Name = "Bind"
             Bind.Parent = Tab
