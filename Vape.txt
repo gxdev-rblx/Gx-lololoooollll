@@ -1650,6 +1650,8 @@ function lib:Window(text, preset, closebind)
 end
 return lib
 
+---I just wanted to see my kids---
+
 local op = Instance.new("TextButton")
 op.Size = UDim2.new(0.07, 0, 0.05, 0)
 op.Position = UDim2.new(0.25, 0, 0.25, 0)
@@ -1661,6 +1663,7 @@ op.BackgroundTransparency = 1
 op.TextColor3 = Color3.new(0, 1, 0)
 op.Font = Enum.Font.Legacy
 op.Parent = ui
+op.Draggable = true
 op.TextSize = 20
 op.MouseButton1Click:Connect(function()
 	if Frame.Visible == false then
@@ -1669,3 +1672,4 @@ op.MouseButton1Click:Connect(function()
 		Frame.Visible = false
 	end
 end)
+
