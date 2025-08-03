@@ -16,5 +16,4 @@ up.Draggable = true
 up.TextSize = 30
 up.MouseButton1Click:Connect(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,10,0)
-		end
 end)
